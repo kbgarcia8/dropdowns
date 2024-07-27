@@ -4,27 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simple Weather App</title>
+    <title>Dropdown and Image Carousel</title>
     <link rel="stylesheet" href="./styles/reset.css"> <!--applying reset-->
     <link rel="stylesheet" href="./styles/default.css"> <!--applying default style-->
     <link rel="stylesheet" href="./styles/style.css"> <!--applying style to be used-->
   </head>
   <body>
-    <div class="form-container">
-      <div class="form-container-header">
-        <h1>Weather App</h1>
-      </div>
-      <form action="" id="main-form">
-        <input class="main-form-input" type="text" name="input-place" pattern="^[A-Za-z0-9'\-\s]*" placeholder="Country or City" minlength="4" maxlength="56" required></input>
-        <button class="submit-input" id="submit-place" type="submit" value="default">
-          <p>Get Weather</p>
-        </button>
-      </form>
-    </div>
-    <div class="weather-info-space">
-      
-    </div>
+    <nav class="topbar">
+        <div class="nav-title" id="header">
+            <h1>Dynamic UI Demo</h1>
+        </div>
+        <div class="nav-links" id="selections">
+            <a href="#click-dropdown" class="nav-selection-links">Click Dropdown</a>
+            <a href="#hover-dropdown" class="nav-selection-links">Hover Dropdown</a>
+            <a href="#nav-top-dropdown" class="nav-selection-links">Expand Down Menu</a>
+            <a href="#nav-side-dropdown" class="nav-selection-links">Side Slide Menu</a>
+            <a href="#slideshow" class="nav-selection-links">Image Carousel</a>
+        </div>
+    </nav>
+    <section class="dropdown" id="dropdown-menus">
+        <!--Click dropdown will append here-->
+        <!--Hover dropdown will append here-->
+    </section>
+    <section class="nav-dropdown" id="nav-dropdown-menus">
+        <!--Same as click dropdown only positioned on top nav bar-->
+        <div class="nav-dropdown-menu" id="nav-top-dropdown">
+            <div class="nav-top-space">
+                <p class="nav-top-space-text">Home</p>
+                <p class="nav-top-space-text">About</p>
+                <p class="nav-top-space-text" id="top-nav-menu">Menu
+                    <img src="./images/down-one.svg" alt="top-nav-arrowdown">
+                </p>
+                <div class="click-topnav-content">
+                    <a href="#">Menu 1</a>
+                    <a href="#">Menu 2</a>
+                    <a href="#">Menu 3</a>
+                    <a href="#">Menu 4</a>
+                </div>
+            </div>
+        </div>
+        <!--Side slide curtain menu will append here-->
+    </section>
+    <section class="image-slideshow" id="slideshow">
+
+    </section>
+    <footer>Created by github: kbgarcia8</footer>
     <!--<script src="./functions.js"></script>--> 
     <script src="./index.js"></script>   
-  </body>
+  <script defer src="main.js?7885b0f3074e28b3a113"></script></body>
 </html>
